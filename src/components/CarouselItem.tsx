@@ -65,7 +65,7 @@ export const CarouselItem = ({ animation, next, prev, swipe, state, index, maxIn
     }, [setHeight, state.active, index, divRef])
 
     // Set height on every child change
-    useEffect(() =>
+    useLayoutEffect(() =>
     {
         checkAndSetHeight();
             
